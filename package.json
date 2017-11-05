@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest",
+		"test": "source venv/bin/activate && py.test && deactivate",
 		"appium": "appium",
 		"appium-doctor": "appium-doctor"
 	},
