@@ -11,6 +11,8 @@
 		"react-native": "0.50.1"
 	},
 	"devDependencies": {
+		"appium": "^1.7.1",
+		"appium-doctor": "^1.4.3",
 		"babel-jest": "21.2.0",
 		"babel-preset-react-native": "4.0.0",
 		"jest": "21.2.1",
