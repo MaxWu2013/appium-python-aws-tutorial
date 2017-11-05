@@ -22,7 +22,7 @@ const instructions = Platform.select({
 export default class App extends Component<{}> {
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.container} accessibilityLabel="testview">
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
