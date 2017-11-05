@@ -9,7 +9,8 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Button
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -20,6 +21,12 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component<{}> {
+  state = {
+    counter: 0
+  }
+
+  onPress = () => this.setState({ counter: this.state.counter + 1 })
+
   render() {
     return (
       <View style={styles.container} accessibilityLabel="testview">
@@ -32,6 +39,9 @@ export default class App extends Component<{}> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+
+        <Text accessibilityLabel="counter">{this.state.counter}</Text>
+        <Button onPress={this.onPress} title="Press me" accessibilityLabel="button" />
       </View>
     );
   }
