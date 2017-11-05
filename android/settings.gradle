@@ -1,0 +1,3 @@
+rootProject.name = 'appiumPythonAwsTutorial'
+
+include ':app'
