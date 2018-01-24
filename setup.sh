@@ -1,5 +1,5 @@
-# Install JS dependencies
-yarn
+# JS
+yarn # Install JS dependencies
 
 # Python
 virtualenv venv # Create virtual environment folder
